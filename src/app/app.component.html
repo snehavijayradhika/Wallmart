@@ -1,0 +1,13 @@
+
+
+<div class="head">
+    <div class="row bg-dark"> <app-nav  *ngIf="_router.url!=='/' && _router.url!=='/Login' && _router.url!=='/**'"></app-nav></div>
+</div>
+
+<div class="row">
+    <div class="col-sm-3"><app-sidenav  *ngIf="_router.url!=='/' && _router.url!=='/Login' && _router.url!=='/**'"></app-sidenav></div>
+      
+    <div class="col-sm-6"><router-outlet></router-outlet></div>
+    
+</div>
+
